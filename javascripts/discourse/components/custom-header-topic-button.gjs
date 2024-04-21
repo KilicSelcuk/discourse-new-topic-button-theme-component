@@ -110,7 +110,7 @@ export default class CustomHeaderTopicButton extends Component {
             @action={{this.createTopic}}
             @translatedLabel={{this.createTopicLabel}}
             @translatedTitle={{this.createTopicTitle}}
-            @icon={{settings.new_topic_button_icon}}
+            @icon=question-circle
             id="new-create-topic"
             class="btn-default header-create-topic"
             disabled={{this.createTopicDisabled}}
@@ -119,7 +119,7 @@ export default class CustomHeaderTopicButton extends Component {
             @action={{this.createTopic}}
             @translatedLabel={{this.createTopicLabel}}
             @translatedTitle={{this.createTopicTitle}}
-            @icon={{settings.new_topic_button_icon}}
+            @icon=image
             id="new-create-topic-resimli"
             class="btn-default header-create-topic"
             disabled={{this.createTopicDisabled}}
