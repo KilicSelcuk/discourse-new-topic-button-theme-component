@@ -15,6 +15,9 @@ export default class CustomHeaderTopicButton extends Component {
   @service currentUser;
   @service router;
   @service siteSettings;
+  @attr('date', {
+    defaultValue() { return new Date(); }
+  }) zamanolustur;
 
   canCreateTopic = this.currentUser?.can_create_topic;
 
@@ -99,6 +102,16 @@ export default class CustomHeaderTopicButton extends Component {
       preferDraft: true,
       category: this.currentCategory,
       tags: this.currentTag,
+      create_as_post_voting: "true",
+    });
+  }
+  createTopic_resimli() {
+    this.composer.openNewTopic({
+      preferDraft: true,
+      category: this.currentCategory,
+      tags: ["resimli-soru"],
+      title: "Hızlı resimli soru sor (Bu başlığı değiştirebilirsiniz)"+zamanolustur,
+      create_as_post_voting: "true",
     });
   }
 
@@ -108,20 +121,20 @@ export default class CustomHeaderTopicButton extends Component {
         <:button>
           <DButton
             @action={{this.createTopic}}
-            @translatedLabel={{this.createTopicLabel}}
-            @translatedTitle={{this.createTopicTitle}}
+            @translatedLabel=""
+            @translatedTitle="Yeni konu/soru oluştur"
             @icon=question-circle
             id="new-create-topic"
             class="btn-default header-create-topic"
             disabled={{this.createTopicDisabled}}
           />
           <DButton
-            @action={{this.createTopic}}
-            @translatedLabel={{this.createTopicLabel}}
-            @translatedTitle={{this.createTopicTitle}}
+            @action={{this.createTopic_resimli}}
+            @translatedLabel=""
+            @translatedTitle="Resimli soru sor"
             @icon=image
             id="new-create-topic-resimli"
-            class="btn-default header-create-topic"
+            class="btn-default header-create-topic-resimli"
             disabled={{this.createTopicDisabled}}
           />
         </:button>
