@@ -110,7 +110,6 @@ dateolustur = new Date();
       category: this.currentCategory,
       tags: ["resimli-soru"],
       title: "Hızlı resimli soru sor (Bu başlığı değiştirebilirsiniz)",
-      create_as_post_voting: "true",
     });
   }
 
