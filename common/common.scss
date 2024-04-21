@@ -28,6 +28,24 @@
   }
 }
 
+
+#new-create-topic {
+    // match default login button size
+    font-size: var(--font-down-1);
+    margin-right: 0.5em;
+    position: relative;
+    top: 0.1em; // optical alignment
+    background-color: var(--tertiary-low)
+}
+#new-create-topic-resimli {
+    // match default login button size
+    font-size: var(--font-down-1);
+    margin-right: 0.5em;
+    position: relative;
+    top: 0.1em; // optical alignment
+    background-color: var(--tertiary-low)
+}
+
 .anon {
   #new-create-topic {
     // match default login button size
