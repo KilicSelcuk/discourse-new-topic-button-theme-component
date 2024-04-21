@@ -15,11 +15,10 @@ export default class CustomHeaderTopicButton extends Component {
   @service currentUser;
   @service router;
   @service siteSettings;
-  @attr('date', {
-    defaultValue() { return new Date(); }
-  }) zamanolustur;
 
   canCreateTopic = this.currentUser?.can_create_topic;
+
+dateolustur = new Date();
 
   topic = this.router.currentRouteName.includes("topic")
     ? getOwner(this).lookup("controller:topic")
@@ -110,7 +109,7 @@ export default class CustomHeaderTopicButton extends Component {
       preferDraft: true,
       category: this.currentCategory,
       tags: ["resimli-soru"],
-      title: "Hızlı resimli soru sor (Bu başlığı değiştirebilirsiniz)"+this.zamanolustur,
+      title: "Hızlı resimli soru sor (Bu başlığı değiştirebilirsiniz)"+this.dateolustur,
       create_as_post_voting: "true",
     });
   }
