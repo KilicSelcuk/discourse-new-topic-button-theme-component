@@ -37,6 +37,11 @@
     top: 0.1em; // optical alignment
     background-color: var(--tertiary-low)
 }
+#new-create-topic:hover {
+    color: black;
+    background-color: var(--tertiary-high);
+}
+
 #new-create-topic-resimli {
     // match default login button size
     font-size: var(--font-down-1);
