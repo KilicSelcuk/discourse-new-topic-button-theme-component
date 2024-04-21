@@ -109,7 +109,7 @@ dateolustur = new Date();
       preferDraft: true,
       category: this.currentCategory,
       tags: ["resimli-soru"],
-      title: "Hızlı resimli soru sor (Bu başlığı değiştirebilirsiniz)"+this.dateolustur,
+      title: "Hızlı resimli soru sor (Bu başlığı değiştirebilirsiniz) {{this.dateolustur}}",
       create_as_post_voting: "true",
     });
   }
