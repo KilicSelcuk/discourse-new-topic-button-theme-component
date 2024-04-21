@@ -18,8 +18,7 @@ export default class CustomHeaderTopicButton extends Component {
 
   canCreateTopic = this.currentUser?.can_create_topic;
 
-dateolustur = new Date();
-
+ 
   topic = this.router.currentRouteName.includes("topic")
     ? getOwner(this).lookup("controller:topic")
     : null;
