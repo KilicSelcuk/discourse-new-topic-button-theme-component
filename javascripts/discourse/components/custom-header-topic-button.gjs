@@ -111,8 +111,8 @@ export default class CustomHeaderTopicButton extends Component {
     this.composer.openNewTopic({
       preferDraft: true,
       category: this.currentCategory,
-      tags: this.currentTag,
-      title: "Hızlı resimli soru sor (Bu başlığı değiştirebilirsiniz) {{this.dateolustur}}".this.dateolustur,
+      tags: ["resimli-soru"],
+      title: "Hızlı resimli soru sor (Bu başlığı değiştirebilirsiniz) {this.dateolustur}",
     });
   }
 
