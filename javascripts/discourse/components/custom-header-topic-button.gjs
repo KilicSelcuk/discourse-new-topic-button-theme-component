@@ -103,11 +103,13 @@ export default class CustomHeaderTopicButton extends Component {
       create_as_post_voting: "true",
     });
   }
+
+  @action
   createTopic_resimli() {
     this.composer.openNewTopic({
       preferDraft: true,
       category: this.currentCategory,
-      tags: ["resimli-soru"],
+      tags: this.currentTag,
       title: "Hızlı resimli soru sor (Bu başlığı değiştirebilirsiniz)",
     });
   }
