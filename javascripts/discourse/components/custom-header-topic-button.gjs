@@ -116,6 +116,17 @@ export default class CustomHeaderTopicButton extends Component {
             disabled={{this.createTopicDisabled}}
           />
         </:button>
+        <:button>
+          <DButton
+            @action={{this.createTopic}}
+            @translatedLabel={{this.createTopicLabel}}2
+            @translatedTitle={{this.createTopicTitle}}3
+            @icon={{settings.new_topic_button_icon}}
+            id="new-create-topic"
+            class="btn-default header-create-topic"
+            disabled={{this.createTopicDisabled}}
+          />
+        </:button>
         <:tooltip>
           {{#if this.createTopicDisabled}}
             <DTooltip
