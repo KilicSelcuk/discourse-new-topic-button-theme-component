@@ -31,11 +31,11 @@
 
 #new-create-topic {
     // match default login button size
-    font-size: var(--font-down-1);
+    font-size: var(--font-down-2);
     margin-right: 0.5em;
     position: relative;
     top: 0.1em; // optical alignment
-    background-color: var(--tertiary)
+    //background-color: var(--tertiary)
 }
 #new-create-topic:hover {
     background-color: var(--tertiary-hover);
@@ -43,7 +43,7 @@
 
 #new-create-topic-resimli {
     // match default login button size
-    font-size: var(--font-down-1);
+    font-size: var(--font-down-2);
     margin-right: 0.5em;
     position: relative;
     top: 0.1em; // optical alignment
@@ -51,12 +51,12 @@
 }
 
 #new-create-topic-resimli:hover {
-    background-color: var(--tertiary-hover);
+    //background-color: var(--tertiary-hover);
 }
 .anon {
   #new-create-topic {
     // match default login button size
-    font-size: var(--font-down-1);
+    font-size: var(--font-down-2);
     margin-right: 0.5em;
     position: relative;
     top: 0.1em; // optical alignment
