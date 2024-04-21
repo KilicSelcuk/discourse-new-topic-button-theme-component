@@ -126,7 +126,7 @@ export default class CustomHeaderTopicButton extends Component {
             @translatedTitle="Yeni konu/soru oluştur"
             @icon=question-circle
             id="new-create-topic"
-            class="btn-default header-create-topic"
+            class="btn-primary header-create-topic"
             disabled={{this.createTopicDisabled}}
           />
           <DButton
@@ -135,7 +135,7 @@ export default class CustomHeaderTopicButton extends Component {
             @translatedTitle="Resimli soru sor"
             @icon=image
             id="new-create-topic-resimli"
-            class="btn-default header-create-topic-resimli"
+            class="btn-primary header-create-topic-resimli"
             disabled={{this.createTopicDisabled}}
           />
         </:button>
@@ -158,7 +158,7 @@ export default class CustomHeaderTopicButton extends Component {
         @icon={{settings.new_topic_button_icon}}
         {{! template-lint-disable no-duplicate-id }}
         id="new-create-topic"
-        class="btn-default header-create-topic"
+        class="btn-primary header-create-topic"
       />
     {{/if}}
   </template>
