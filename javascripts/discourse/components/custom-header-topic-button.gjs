@@ -121,21 +121,21 @@ export default class CustomHeaderTopicButton extends Component {
       <DButtonTooltip>
         <:button>
           <DButton
-            @action={{this.createTopic}}
-            @translatedLabel=""
-            @translatedTitle="Yeni konu/soru oluştur"
-            @icon=question-circle
-            id="new-create-topic"
-            class="btn-primary header-create-topic"
-            disabled={{this.createTopicDisabled}}
-          />
-          <DButton
             @action={{this.createTopic_resimli}}
             @translatedLabel=""
             @translatedTitle="Resimli soru sor"
             @icon=image
             id="new-create-topic-resimli"
             class="btn-primary header-create-topic-resimli"
+            disabled={{this.createTopicDisabled}}
+          />
+          <DButton
+            @action={{this.createTopic}}
+            @translatedLabel=""
+            @translatedTitle="Yeni konu/soru oluştur"
+            @icon=question-circle
+            id="new-create-topic"
+            class="btn-primary header-create-topic"
             disabled={{this.createTopicDisabled}}
           />
         </:button>
