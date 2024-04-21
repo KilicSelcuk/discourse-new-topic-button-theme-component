@@ -16,7 +16,7 @@ export default class CustomHeaderTopicButton extends Component {
   @service router;
   @service siteSettings;
 
-  dateolustur = new Date().getMonthName();
+  dateolustur = new Date(Date.now()).toLocaleString('en-US', {month: 'short'});
 
   canCreateTopic = this.currentUser?.can_create_topic;
 
