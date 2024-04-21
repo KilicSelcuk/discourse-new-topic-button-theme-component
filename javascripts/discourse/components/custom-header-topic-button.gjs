@@ -112,7 +112,7 @@ export default class CustomHeaderTopicButton extends Component {
       preferDraft: true,
       category: this.currentCategory,
       tags: ["resimli-soru"],
-      title: "Hızlı resimli soru sor (Bu başlığı değiştirebilirsiniz) "+this.dateolustur,
+      title: "Hızlı resimli soru sor - "+this.dateolustur,
     });
   }
 
