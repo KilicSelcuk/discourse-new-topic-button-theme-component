@@ -35,11 +35,10 @@
     margin-right: 0.5em;
     position: relative;
     top: 0.1em; // optical alignment
-    background-color: var(--tertiary-low)
+    background-color: var(--tertiary)
 }
 #new-create-topic:hover {
-    color: black;
-    background-color: var(--tertiary-high);
+    background-color: var(--tertiary-hover);
 }
 
 #new-create-topic-resimli {
@@ -48,9 +47,12 @@
     margin-right: 0.5em;
     position: relative;
     top: 0.1em; // optical alignment
-    background-color: var(--tertiary-low)
+    background-color: var(--tertiary)
 }
 
+#new-create-topic-resimli:hover {
+    background-color: var(--tertiary-hover);
+}
 .anon {
   #new-create-topic {
     // match default login button size
