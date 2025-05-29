@@ -95,6 +95,7 @@ export default class CustomHeaderTopicButton extends Component {
       preferDraft: true,
       category: this.currentCategory,
       tags: this.currentTag,
+      title: false,
     });
   }
 
