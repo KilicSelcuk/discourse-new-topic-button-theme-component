@@ -15,7 +15,7 @@ export default class CustomHeaderTopicButton extends Component {
   @service router;
   @service siteSettings;
 
-  canCreateTopic = this.currentUser?.can_create_topic;
+  can = this.currentUser?.can_create_topic;
 
   topic = this.router.currentRouteName.includes("topic")
     ? getOwner(this).lookup("controller:topic")
@@ -49,10 +49,7 @@ export default class CustomHeaderTopicButton extends Component {
   }
 
   get canCreateTopicWithTag() {
-    return (
-      !this.router.currentRoute.attributes?.tag?.staff ||
-      this.currentUser?.staff
-    );
+    return null;
   }
 
   get canCreateTopicWithCategory() {
@@ -110,7 +107,7 @@ export default class CustomHeaderTopicButton extends Component {
             @icon={{settings.new_topic_button_icon}}
             id="new-create-topic"
             class="btn-default header-create-topic"
-            disabled={{this.createTopicDisabled}}
+            disabled={{this.Disabled}}
           />
         </:button>
         <:tooltip>
@@ -125,8 +122,8 @@ export default class CustomHeaderTopicButton extends Component {
     {{else if settings.show_to_anon}}
       <DButton
         @action={{routeAction "showLogin"}}
-        @translatedLabel={{this.createTopicLabel}}
-        @translatedTitle={{this.createTopicTitle}}
+        @translatedLabel={{this.Label}}
+        @translatedTitle={{this.Title}}
         @icon={{settings.new_topic_button_icon}}
         id="new-create-topic"
         class="btn-default header-create-topic"
