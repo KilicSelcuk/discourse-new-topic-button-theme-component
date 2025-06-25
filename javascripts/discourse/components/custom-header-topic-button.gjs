@@ -91,11 +91,14 @@ export default class CustomHeaderTopicButton extends Component {
 
   @action
   createTopic() {
+    return this.router.transitionTo("discourse-ai-bot-conversations");
+    /* 25/06/2025 sildim yukardaki satiri ekledim: kuaza
     this.composer.openNewTopic({
       preferDraft: true,
       category: this.currentCategory,
       tags: this.currentTag,
     });
+    */
   }
 
   <template>
